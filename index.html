@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEO TOP UP - Official Coin Seller</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+    <link href="[https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@500;700;800&display=swap](https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@500;700;800&display=swap)" rel="stylesheet">
+
+    <!-- Memanggil File CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative">
+
+    <!-- Efek Partikel Latar Belakang -->
+    <div class="particles">
+        <div class="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full shadow-[0_0_10px_#00c3ff]"></div>
+        <div class="absolute top-40 right-20 w-3 h-3 bg-yellow-400 rounded-full shadow-[0_0_15px_#f7d057]"></div>
+        <div class="absolute bottom-20 left-1/4 w-2 h-2 bg-blue-300 rounded-full shadow-[0_0_10px_#00c3ff]"></div>
+        <div class="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-yellow-300 rounded-full shadow-[0_0_8px_#f7d057]"></div>
+    </div>
+
+    <!-- Tombol Admin -->
+    <button onclick="openAdminModal()" class="absolute top-4 right-4 text-xs text-gray-500 hover:text-yellow-400 opacity-50 hover:opacity-100 transition">
+        <i class="fas fa-lock"></i> Admin
+    </button>
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <!-- HEADER -->
+        <div class="text-center mb-8 relative">
+            <h1 class="gold-text-3d text-4xl md:text-5xl lg:text-6xl font-black mb-2">XEO TOP UP</h1>
+            <h2 class="gold-text-3d text-2xl md:text-3xl lg:text-4xl font-bold">OFFICIAL COIN SELLER SAHI</h2>
+            <div class="absolute top-0 left-4 md:left-20 text-yellow-400 text-4xl floating-coin opacity-80" style="text-shadow: 0 0 10px #f7d057;"><i class="fas fa-coins"></i></div>
+            <div class="absolute top-4 right-4 md:right-20 text-yellow-400 text-5xl floating-coin opacity-80" style="animation-delay: 1s; text-shadow: 0 0 10px #f7d057;"><i class="fab fa-ethereum"></i></div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+            <!-- SIDEBAR PEMBAYARAN -->
+            <div class="w-full md:w-1/6 flex md:flex-col gap-4 overflow-x-auto md:overflow-visible pb-4 md:pb-0 justify-center">
+                <div class="payment-logo min-w-[80px]">
+                    <div class="text-blue-300 font-bold text-sm mb-1">Sahi</div>
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl shadow-inner"><i class="fas fa-cloud"></i></div>
+                </div>
+                <div class="payment-logo min-w-[80px]">
+                    <div class="w-12 h-12 bg-white rounded flex items-center justify-center text-blue-800 font-black text-xl mb-1">BRI</div>
+                    <div class="text-blue-300 text-xs font-bold text-center">BANK BRI</div>
+                </div>
+                <div class="payment-logo min-w-[80px]">
+                    <div class="w-12 h-12 bg-white p-1 rounded"><i class="fas fa-qrcode text-black text-4xl"></i></div>
+                    <div class="text-yellow-400 text-sm font-bold mt-1">QRIS</div>
+                </div>
+                <div class="payment-logo min-w-[80px]">
+                    <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl border-2 border-white mb-1">S</div>
+                    <div class="text-orange-400 text-xs font-bold text-center">SeaBank</div>
+                </div>
+            </div>
+
+            <!-- GRID HARGA -->
+            <div class="w-full md:w-5/6">
+                <div id="price-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
+                    <div class="col-span-full text-center text-yellow-400 py-10">
+                        <i class="fas fa-circle-notch fa-spin text-3xl mb-3"></i>
+                        <p>Memuat Data Harga...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="mt-12 text-center">
+            <div class="inline-flex items-center gap-3 bg-[#0a1329] border border-[#c48c1e] px-6 py-2 rounded-full mb-6 shadow-[0_0_15px_rgba(196,140,30,0.3)]">
+                <i class="fab fa-whatsapp text-green-500 text-3xl drop-shadow-[0_0_5px_#22c55e]"></i>
+                <span class="gold-text-simple text-2xl md:text-3xl font-black tracking-wider">0851 9130 3473</span>
+            </div>
+            
+            <div class="flex items-center justify-center gap-3 text-sm md:text-base lg:text-xl font-bold text-yellow-200">
+                <i class="fas fa-star text-yellow-500"></i>
+                <p style="letter-spacing: 1px;">CEPAT • AMAN DAN TERPERCAYA - BUKA JAM 08.00 WIB.</p>
+                <i class="fas fa-star text-yellow-500"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL ADMIN -->
+    <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 items-center justify-center backdrop-blur-sm" style="display: none;">
+        <div class="bg-[#0b1b36] border border-[#c48c1e] p-8 rounded-xl shadow-2xl max-w-sm w-full text-center">
+            <h3 class="gold-text-simple text-2xl font-bold mb-4">Login Admin</h3>
+            <p class="text-gray-300 text-sm mb-4">Masukkan kata sandi untuk mengedit harga.</p>
+            <input type="password" id="adminPassword" placeholder="Kata Sandi" class="w-full bg-[#040f21] border border-blue-500 rounded p-2 text-white focus:outline-none focus:border-yellow-400 mb-4 text-center">
+            <div class="flex gap-2 justify-center">
+                <button onclick="closeAdminModal()" class="px-4 py-2 bg-gray-600 rounded hover:bg-gray-700 text-white font-bold transition">Batal</button>
+                <button onclick="verifyAdmin()" class="px-4 py-2 bg-gradient-to-r from-yellow-600 to-yellow-400 text-[#040f21] rounded hover:opacity-90 font-bold transition">Login</button>
+            </div>
+            <p id="loginError" class="text-red-500 text-xs mt-2 hidden">Kata sandi salah!</p>
+        </div>
+    </div>
+
+    <!-- MODAL EDIT HARGA -->
+    <div id="editModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 items-center justify-center backdrop-blur-sm" style="display: none;">
+        <div class="bg-[#0b1b36] border border-[#c48c1e] p-8 rounded-xl shadow-2xl max-w-sm w-full">
+            <h3 class="gold-text-simple text-2xl font-bold mb-4 text-center">Edit Item</h3>
+            <input type="hidden" id="editId">
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm font-bold mb-2">Jumlah Coin (Kiri)</label>
+                <input type="text" id="editCoin" class="w-full bg-[#040f21] border border-blue-500 rounded p-2 text-white focus:outline-none focus:border-yellow-400">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-300 text-sm font-bold mb-2">Harga Rp (Kanan)</label>
+                <input type="text" id="editPrice" class="w-full bg-[#040f21] border border-blue-500 rounded p-2 text-white focus:outline-none focus:border-yellow-400">
+            </div>
+            <div class="flex gap-2 justify-between">
+                <button onclick="closeEditModal()" class="w-1/2 py-2 bg-gray-600 rounded hover:bg-gray-700 text-white font-bold transition">Batal</button>
+                <button onclick="saveEdit()" class="w-1/2 py-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded hover:opacity-90 font-bold transition">Simpan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memanggil File JS Eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
